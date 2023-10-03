@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: beige;
+    /* border: 2px solid red; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: 400px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    position: relative;
+}
+
+.imgContainer {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+.imgContainer img {
+    width: 400px;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#reaction{
+    font-size: 60px;
+    filter: drop-shadow(5px 5px 10px red);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform ease-in-out 0.5s;
+}
+
+.reactionContainer{
+    /* border: 2px solid red; */
+    width: 45%;
+    padding: 5px;
+}
+
+.reactionItem{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reactionItem i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#cursor{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(239, 118, 118);
+    border-radius: 50%;
+    position: absolute;
+    transition: all linear 0.1s;
+    scale: 2;
+    opacity: 0;
+}
